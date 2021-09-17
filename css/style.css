@@ -1,0 +1,93 @@
+*::before, *, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    background-color: #000;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    padding-left: 10%;
+
+    width: 100%;
+    height: 100%;
+
+
+    z-index: 10;
+    box-shadow: inset #0000FF 0 0 15px;
+}
+
+.container h1,
+.container h2{
+    color: #fff;
+    position: relative;
+
+    width: fit-content;
+    margin: 5px;
+
+}
+
+.container h1{
+    font-size: 5rem;
+    font-family: Rawline;
+}
+.container h2{
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.container a{
+    border: #0000FF 2px solid;
+    width: 150px;
+    height: 35px;
+
+    box-shadow: 0 0 15px #0000FF;
+
+    border-radius: 20px;
+
+    background: transparent;
+
+    margin-top: 20px;
+}
+
+.container a:hover{
+    color: rgb(255, 255, 255);
+    background-color:  #0000FF;
+}
+
+.container a button{
+    width: 100%;
+    height: 100%;
+    
+    border: none;
+    background: none;
+    
+    color: #0000FF;
+    font-weight: 800;
+    
+    cursor: pointer;
+}
+.container a button:hover{
+    color: rgb(255, 255, 255);
+}
+
+canvas{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    border: 2px solid #0000FF;
+    background: transparent;
+}
